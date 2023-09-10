@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E32ECF2AA876BE001C78DD /* UdpConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32ECE2AA876BE001C78DD /* UdpConnectApp.swift */; };
+		00E32ED12AA876BE001C78DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32ED02AA876BE001C78DD /* ContentView.swift */; };
+		00E32ED32AA876BF001C78DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E32ED22AA876BF001C78DD /* Assets.xcassets */; };
+		00E32ED62AA876BF001C78DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E32ED52AA876BF001C78DD /* Preview Assets.xcassets */; };
+		00E32EE02AA876C0001C78DD /* UdpConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EDF2AA876C0001C78DD /* UdpConnectTests.swift */; };
+		00E32EEA2AA876C0001C78DD /* UdpConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EE92AA876C0001C78DD /* UdpConnectUITests.swift */; };
+		00E32EEC2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EEB2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift */; };
+		00E32F002AAAFECB001C78DD /* lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EFE2AAAFECB001C78DD /* lib.cpp */; };
+		00E32F022AAB0498001C78DD /* lib-bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00E32F012AAB0498001C78DD /* lib-bridge.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E32EDC2AA876C0001C78DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E32EC32AA876BE001C78DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E32ECA2AA876BE001C78DD;
+			remoteInfo = UdpConnect;
+		};
+		00E32EE62AA876C0001C78DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E32EC32AA876BE001C78DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E32ECA2AA876BE001C78DD;
+			remoteInfo = UdpConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E32ECB2AA876BE001C78DD /* UdpConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdpConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E32ECE2AA876BE001C78DD /* UdpConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpConnectApp.swift; sourceTree = "<group>"; };
+		00E32ED02AA876BE001C78DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00E32ED22AA876BF001C78DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00E32ED52AA876BF001C78DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00E32EDB2AA876C0001C78DD /* UdpConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdpConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E32EDF2AA876C0001C78DD /* UdpConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpConnectTests.swift; sourceTree = "<group>"; };
+		00E32EE52AA876C0001C78DD /* UdpConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdpConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E32EE92AA876C0001C78DD /* UdpConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpConnectUITests.swift; sourceTree = "<group>"; };
+		00E32EEB2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00E32EFD2AAAFDCD001C78DD /* UdpConnect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UdpConnect-Bridging-Header.h"; sourceTree = "<group>"; };
+		00E32EFE2AAAFECB001C78DD /* lib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lib.cpp; sourceTree = "<group>"; };
+		00E32EFF2AAAFECB001C78DD /* lib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lib.hpp; sourceTree = "<group>"; };
+		00E32F012AAB0498001C78DD /* lib-bridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "lib-bridge.mm"; sourceTree = "<group>"; };
+		00E32F032AAB06A1001C78DD /* lib-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lib-bridge.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E32EC82AA876BE001C78DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E32ED82AA876C0001C78DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E32EE22AA876C0001C78DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E32EC22AA876BE001C78DD = {
+			isa = PBXGroup;
+			children = (
+				00E32ECD2AA876BE001C78DD /* UdpConnect */,
+				00E32EDE2AA876C0001C78DD /* UdpConnectTests */,
+				00E32EE82AA876C0001C78DD /* UdpConnectUITests */,
+				00E32ECC2AA876BE001C78DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00E32ECC2AA876BE001C78DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E32ECB2AA876BE001C78DD /* UdpConnect.app */,
+				00E32EDB2AA876C0001C78DD /* UdpConnectTests.xctest */,
+				00E32EE52AA876C0001C78DD /* UdpConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E32ECD2AA876BE001C78DD /* UdpConnect */ = {
+			isa = PBXGroup;
+			children = (
+				00E32ECE2AA876BE001C78DD /* UdpConnectApp.swift */,
+				00E32ED02AA876BE001C78DD /* ContentView.swift */,
+				00E32ED22AA876BF001C78DD /* Assets.xcassets */,
+				00E32ED42AA876BF001C78DD /* Preview Content */,
+				00E32EFD2AAAFDCD001C78DD /* UdpConnect-Bridging-Header.h */,
+				00E32EFE2AAAFECB001C78DD /* lib.cpp */,
+				00E32EFF2AAAFECB001C78DD /* lib.hpp */,
+				00E32F012AAB0498001C78DD /* lib-bridge.mm */,
+				00E32F032AAB06A1001C78DD /* lib-bridge.h */,
+			);
+			path = UdpConnect;
+			sourceTree = "<group>";
+		};
+		00E32ED42AA876BF001C78DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00E32ED52AA876BF001C78DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00E32EDE2AA876C0001C78DD /* UdpConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E32EDF2AA876C0001C78DD /* UdpConnectTests.swift */,
+			);
+			path = UdpConnectTests;
+			sourceTree = "<group>";
+		};
+		00E32EE82AA876C0001C78DD /* UdpConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00E32EE92AA876C0001C78DD /* UdpConnectUITests.swift */,
+				00E32EEB2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift */,
+			);
+			path = UdpConnectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E32ECA2AA876BE001C78DD /* UdpConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E32EEF2AA876C0001C78DD /* Build configuration list for PBXNativeTarget "UdpConnect" */;
+			buildPhases = (
+				00E32EC72AA876BE001C78DD /* Sources */,
+				00E32EC82AA876BE001C78DD /* Frameworks */,
+				00E32EC92AA876BE001C78DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UdpConnect;
+			productName = UdpConnect;
+			productReference = 00E32ECB2AA876BE001C78DD /* UdpConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00E32EDA2AA876C0001C78DD /* UdpConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E32EF22AA876C0001C78DD /* Build configuration list for PBXNativeTarget "UdpConnectTests" */;
+			buildPhases = (
+				00E32ED72AA876C0001C78DD /* Sources */,
+				00E32ED82AA876C0001C78DD /* Frameworks */,
+				00E32ED92AA876C0001C78DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E32EDD2AA876C0001C78DD /* PBXTargetDependency */,
+			);
+			name = UdpConnectTests;
+			productName = UdpConnectTests;
+			productReference = 00E32EDB2AA876C0001C78DD /* UdpConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00E32EE42AA876C0001C78DD /* UdpConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E32EF52AA876C0001C78DD /* Build configuration list for PBXNativeTarget "UdpConnectUITests" */;
+			buildPhases = (
+				00E32EE12AA876C0001C78DD /* Sources */,
+				00E32EE22AA876C0001C78DD /* Frameworks */,
+				00E32EE32AA876C0001C78DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E32EE72AA876C0001C78DD /* PBXTargetDependency */,
+			);
+			name = UdpConnectUITests;
+			productName = UdpConnectUITests;
+			productReference = 00E32EE52AA876C0001C78DD /* UdpConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E32EC32AA876BE001C78DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					00E32ECA2AA876BE001C78DD = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					00E32EDA2AA876C0001C78DD = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 00E32ECA2AA876BE001C78DD;
+					};
+					00E32EE42AA876C0001C78DD = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 00E32ECA2AA876BE001C78DD;
+					};
+				};
+			};
+			buildConfigurationList = 00E32EC62AA876BE001C78DD /* Build configuration list for PBXProject "UdpConnect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00E32EC22AA876BE001C78DD;
+			productRefGroup = 00E32ECC2AA876BE001C78DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E32ECA2AA876BE001C78DD /* UdpConnect */,
+				00E32EDA2AA876C0001C78DD /* UdpConnectTests */,
+				00E32EE42AA876C0001C78DD /* UdpConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E32EC92AA876BE001C78DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E32ED62AA876BF001C78DD /* Preview Assets.xcassets in Resources */,
+				00E32ED32AA876BF001C78DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E32ED92AA876C0001C78DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E32EE32AA876C0001C78DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E32EC72AA876BE001C78DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E32F002AAAFECB001C78DD /* lib.cpp in Sources */,
+				00E32F022AAB0498001C78DD /* lib-bridge.mm in Sources */,
+				00E32ED12AA876BE001C78DD /* ContentView.swift in Sources */,
+				00E32ECF2AA876BE001C78DD /* UdpConnectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E32ED72AA876C0001C78DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E32EE02AA876C0001C78DD /* UdpConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E32EE12AA876C0001C78DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E32EEA2AA876C0001C78DD /* UdpConnectUITests.swift in Sources */,
+				00E32EEC2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E32EDD2AA876C0001C78DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E32ECA2AA876BE001C78DD /* UdpConnect */;
+			targetProxy = 00E32EDC2AA876C0001C78DD /* PBXContainerItemProxy */;
+		};
+		00E32EE72AA876C0001C78DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E32ECA2AA876BE001C78DD /* UdpConnect */;
+			targetProxy = 00E32EE62AA876C0001C78DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E32EED2AA876C0001C78DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E32EEE2AA876C0001C78DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00E32EF02AA876C0001C78DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UdpConnect/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UdpConnect/UdpConnect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E32EF12AA876C0001C78DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UdpConnect/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UdpConnect/UdpConnect-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00E32EF32AA876C0001C78DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdpConnect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UdpConnect";
+			};
+			name = Debug;
+		};
+		00E32EF42AA876C0001C78DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdpConnect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UdpConnect";
+			};
+			name = Release;
+		};
+		00E32EF62AA876C0001C78DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UdpConnect;
+			};
+			name = Debug;
+		};
+		00E32EF72AA876C0001C78DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UdpConnect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E32EC62AA876BE001C78DD /* Build configuration list for PBXProject "UdpConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E32EED2AA876C0001C78DD /* Debug */,
+				00E32EEE2AA876C0001C78DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E32EEF2AA876C0001C78DD /* Build configuration list for PBXNativeTarget "UdpConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E32EF02AA876C0001C78DD /* Debug */,
+				00E32EF12AA876C0001C78DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E32EF22AA876C0001C78DD /* Build configuration list for PBXNativeTarget "UdpConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E32EF32AA876C0001C78DD /* Debug */,
+				00E32EF42AA876C0001C78DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E32EF52AA876C0001C78DD /* Build configuration list for PBXNativeTarget "UdpConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E32EF62AA876C0001C78DD /* Debug */,
+				00E32EF72AA876C0001C78DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00E32EC32AA876BE001C78DD /* Project object */;
+}
