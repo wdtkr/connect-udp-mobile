@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00967DF62B54E7D2005D46ED /* udp-lib-ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00967DF52B54E7D2005D46ED /* udp-lib-ios.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		00967DF72B54EB88005D46ED /* udp-lib-ios.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 00967DF52B54E7D2005D46ED /* udp-lib-ios.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		00E32ECF2AA876BE001C78DD /* UdpConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32ECE2AA876BE001C78DD /* UdpConnectApp.swift */; };
 		00E32ED12AA876BE001C78DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32ED02AA876BE001C78DD /* ContentView.swift */; };
 		00E32ED32AA876BF001C78DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E32ED22AA876BF001C78DD /* Assets.xcassets */; };
@@ -14,7 +16,6 @@
 		00E32EE02AA876C0001C78DD /* UdpConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EDF2AA876C0001C78DD /* UdpConnectTests.swift */; };
 		00E32EEA2AA876C0001C78DD /* UdpConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EE92AA876C0001C78DD /* UdpConnectUITests.swift */; };
 		00E32EEC2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EEB2AA876C0001C78DD /* UdpConnectUITestsLaunchTests.swift */; };
-		00E32F002AAAFECB001C78DD /* lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00E32EFE2AAAFECB001C78DD /* lib.cpp */; };
 		00E32F022AAB0498001C78DD /* lib-bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00E32F012AAB0498001C78DD /* lib-bridge.mm */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +36,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0092988C2B24468800EDEBD7 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00967DF72B54EB88005D46ED /* udp-lib-ios.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0092988F2B24548A00EDEBD7 /* media-lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "media-lib.h"; sourceTree = "<group>"; };
+		0095ACAB2B246B8D00EB5594 /* media-lib-bridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "media-lib-bridge.mm"; sourceTree = "<group>"; };
+		0095ACAD2B246D3800EB5594 /* media-lib-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "media-lib-bridge.h"; sourceTree = "<group>"; };
+		00967DF52B54E7D2005D46ED /* udp-lib-ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "udp-lib-ios.dylib"; sourceTree = "<group>"; };
 		00E32ECB2AA876BE001C78DD /* UdpConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdpConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E32ECE2AA876BE001C78DD /* UdpConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdpConnectApp.swift; sourceTree = "<group>"; };
 		00E32ED02AA876BE001C78DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00967DF62B54E7D2005D46ED /* udp-lib-ios.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0095ACB12B25952100EB5594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		00E32EC22AA876BE001C78DD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,7 @@
 				00E32EDE2AA876C0001C78DD /* UdpConnectTests */,
 				00E32EE82AA876C0001C78DD /* UdpConnectUITests */,
 				00E32ECC2AA876BE001C78DD /* Products */,
+				0095ACB12B25952100EB5594 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +129,7 @@
 		00E32ECD2AA876BE001C78DD /* UdpConnect */ = {
 			isa = PBXGroup;
 			children = (
+				00967DF52B54E7D2005D46ED /* udp-lib-ios.dylib */,
 				00E32ECE2AA876BE001C78DD /* UdpConnectApp.swift */,
 				00E32ED02AA876BE001C78DD /* ContentView.swift */,
 				00E32ED22AA876BF001C78DD /* Assets.xcassets */,
@@ -110,6 +139,9 @@
 				00E32EFF2AAAFECB001C78DD /* lib.hpp */,
 				00E32F012AAB0498001C78DD /* lib-bridge.mm */,
 				00E32F032AAB06A1001C78DD /* lib-bridge.h */,
+				0092988F2B24548A00EDEBD7 /* media-lib.h */,
+				0095ACAB2B246B8D00EB5594 /* media-lib-bridge.mm */,
+				0095ACAD2B246D3800EB5594 /* media-lib-bridge.h */,
 			);
 			path = UdpConnect;
 			sourceTree = "<group>";
@@ -149,6 +181,7 @@
 				00E32EC72AA876BE001C78DD /* Sources */,
 				00E32EC82AA876BE001C78DD /* Frameworks */,
 				00E32EC92AA876BE001C78DD /* Resources */,
+				0092988C2B24468800EDEBD7 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -270,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E32F002AAAFECB001C78DD /* lib.cpp in Sources */,
 				00E32F022AAB0498001C78DD /* lib-bridge.mm in Sources */,
 				00E32ED12AA876BE001C78DD /* ContentView.swift in Sources */,
 				00E32ECF2AA876BE001C78DD /* UdpConnectApp.swift in Sources */,
@@ -436,17 +468,23 @@
 				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"LD_DYLIB_INSTALL_NAME[arch=*]" = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UdpConnect",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "UdpConnect/UdpConnect-Bridging-Header.h";
@@ -477,8 +515,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UdpConnect",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConnect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wdtkr.UdpConn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "UdpConnect/UdpConnect-Bridging-Header.h";

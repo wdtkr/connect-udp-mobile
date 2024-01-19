@@ -15,6 +15,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'arm64-v8a', 'x86_64', 'armeabi-v7a' // 必要なABIを指定
+        }
     }
 
     buildTypes {
@@ -33,6 +37,13 @@ android {
 
     viewBinding {
         enabled = true
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            version "3.22.1" // あなたのNDKバージョンに合わせてください
+        }
     }
 }
 

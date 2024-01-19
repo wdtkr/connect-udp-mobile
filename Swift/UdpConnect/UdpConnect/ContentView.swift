@@ -5,9 +5,13 @@ struct ContentView: View {
     @State private var isReceiving = false
     @State private var isSetCallback = false
     @State private var lib = LibCpp()
+    @State private var mediaLib = MediaLibBridge()
     
     var body: some View {
         VStack {
+            Button("test") {
+                MediaLibBridge.test()
+            }
             Button("メッセージ送信") {
                 if !isSetCallback {
                     lib.setCallback({ (message: String?) in
