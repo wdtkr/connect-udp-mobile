@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00967E052B550545005D46ED /* lib_udp_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00967E042B550545005D46ED /* lib_udp_iosApp.swift */; };
+		00967E072B550545005D46ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00967E062B550545005D46ED /* ContentView.swift */; };
+		00967E092B550547005D46ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00967E082B550547005D46ED /* Assets.xcassets */; };
+		00967E0D2B550547005D46ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00967E0C2B550547005D46ED /* Preview Assets.xcassets */; };
+		00967E172B550547005D46ED /* lib_udp_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00967E162B550547005D46ED /* lib_udp_iosTests.swift */; };
+		00967E212B550547005D46ED /* lib_udp_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00967E202B550547005D46ED /* lib_udp_iosUITests.swift */; };
+		00967E232B550547005D46ED /* lib_udp_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00967E222B550547005D46ED /* lib_udp_iosUITestsLaunchTests.swift */; };
+		00967E342B550BDE005D46ED /* lib-bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00967E332B550BDE005D46ED /* lib-bridge.mm */; };
+		00967E392B563F53005D46ED /* liblib-udp-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00967E372B563F36005D46ED /* liblib-udp-ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00967E132B550547005D46ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00967DF92B550545005D46ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00967E002B550545005D46ED;
+			remoteInfo = "lib-udp-ios";
+		};
+		00967E1D2B550547005D46ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00967DF92B550545005D46ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00967E002B550545005D46ED;
+			remoteInfo = "lib-udp-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00967E012B550545005D46ED /* lib-udp-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lib-udp-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00967E042B550545005D46ED /* lib_udp_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib_udp_iosApp.swift; sourceTree = "<group>"; };
+		00967E062B550545005D46ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00967E082B550547005D46ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00967E0A2B550547005D46ED /* lib_udp_ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lib_udp_ios.entitlements; sourceTree = "<group>"; };
+		00967E0C2B550547005D46ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00967E122B550547005D46ED /* lib-udp-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lib-udp-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00967E162B550547005D46ED /* lib_udp_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib_udp_iosTests.swift; sourceTree = "<group>"; };
+		00967E1C2B550547005D46ED /* lib-udp-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lib-udp-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00967E202B550547005D46ED /* lib_udp_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib_udp_iosUITests.swift; sourceTree = "<group>"; };
+		00967E222B550547005D46ED /* lib_udp_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib_udp_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00967E2F2B550AB3005D46ED /* liblib-udp-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblib-udp-ios.a"; path = "../../GitHub/connect-udp-library/build-udp-ios/build/Debug-iphoneos/liblib-udp-ios.a"; sourceTree = "<group>"; };
+		00967E312B550BDE005D46ED /* lib-udp-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lib-udp-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		00967E322B550BDE005D46ED /* lib-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "lib-bridge.h"; sourceTree = "<group>"; };
+		00967E332B550BDE005D46ED /* lib-bridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "lib-bridge.mm"; sourceTree = "<group>"; };
+		00967E352B550C17005D46ED /* lib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lib.hpp; sourceTree = "<group>"; };
+		00967E372B563F36005D46ED /* liblib-udp-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblib-udp-ios.a"; path = "lib-udp-ios/liblib-udp-ios.a"; sourceTree = "<group>"; };
+		00967E3A2B6447A3005D46ED /* liblib-media-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "liblib-media-ios.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00967DFE2B550545005D46ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00967E392B563F53005D46ED /* liblib-udp-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00967E0F2B550547005D46ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00967E192B550547005D46ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00967DF82B550545005D46ED = {
+			isa = PBXGroup;
+			children = (
+				00967E032B550545005D46ED /* lib-udp-ios */,
+				00967E152B550547005D46ED /* lib-udp-iosTests */,
+				00967E1F2B550547005D46ED /* lib-udp-iosUITests */,
+				00967E022B550545005D46ED /* Products */,
+				00967E362B563F36005D46ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00967E022B550545005D46ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00967E012B550545005D46ED /* lib-udp-ios.app */,
+				00967E122B550547005D46ED /* lib-udp-iosTests.xctest */,
+				00967E1C2B550547005D46ED /* lib-udp-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00967E032B550545005D46ED /* lib-udp-ios */ = {
+			isa = PBXGroup;
+			children = (
+				00967E352B550C17005D46ED /* lib.hpp */,
+				00967E322B550BDE005D46ED /* lib-bridge.h */,
+				00967E332B550BDE005D46ED /* lib-bridge.mm */,
+				00967E2F2B550AB3005D46ED /* liblib-udp-ios.a */,
+				00967E3A2B6447A3005D46ED /* liblib-media-ios.a */,
+				00967E042B550545005D46ED /* lib_udp_iosApp.swift */,
+				00967E062B550545005D46ED /* ContentView.swift */,
+				00967E082B550547005D46ED /* Assets.xcassets */,
+				00967E0A2B550547005D46ED /* lib_udp_ios.entitlements */,
+				00967E0B2B550547005D46ED /* Preview Content */,
+				00967E312B550BDE005D46ED /* lib-udp-ios-Bridging-Header.h */,
+			);
+			path = "lib-udp-ios";
+			sourceTree = "<group>";
+		};
+		00967E0B2B550547005D46ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00967E0C2B550547005D46ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00967E152B550547005D46ED /* lib-udp-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				00967E162B550547005D46ED /* lib_udp_iosTests.swift */,
+			);
+			path = "lib-udp-iosTests";
+			sourceTree = "<group>";
+		};
+		00967E1F2B550547005D46ED /* lib-udp-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00967E202B550547005D46ED /* lib_udp_iosUITests.swift */,
+				00967E222B550547005D46ED /* lib_udp_iosUITestsLaunchTests.swift */,
+			);
+			path = "lib-udp-iosUITests";
+			sourceTree = "<group>";
+		};
+		00967E362B563F36005D46ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00967E372B563F36005D46ED /* liblib-udp-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00967E002B550545005D46ED /* lib-udp-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00967E262B550547005D46ED /* Build configuration list for PBXNativeTarget "lib-udp-ios" */;
+			buildPhases = (
+				00967DFD2B550545005D46ED /* Sources */,
+				00967DFE2B550545005D46ED /* Frameworks */,
+				00967DFF2B550545005D46ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lib-udp-ios";
+			productName = "lib-udp-ios";
+			productReference = 00967E012B550545005D46ED /* lib-udp-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00967E112B550547005D46ED /* lib-udp-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00967E292B550547005D46ED /* Build configuration list for PBXNativeTarget "lib-udp-iosTests" */;
+			buildPhases = (
+				00967E0E2B550547005D46ED /* Sources */,
+				00967E0F2B550547005D46ED /* Frameworks */,
+				00967E102B550547005D46ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00967E142B550547005D46ED /* PBXTargetDependency */,
+			);
+			name = "lib-udp-iosTests";
+			productName = "lib-udp-iosTests";
+			productReference = 00967E122B550547005D46ED /* lib-udp-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00967E1B2B550547005D46ED /* lib-udp-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00967E2C2B550547005D46ED /* Build configuration list for PBXNativeTarget "lib-udp-iosUITests" */;
+			buildPhases = (
+				00967E182B550547005D46ED /* Sources */,
+				00967E192B550547005D46ED /* Frameworks */,
+				00967E1A2B550547005D46ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00967E1E2B550547005D46ED /* PBXTargetDependency */,
+			);
+			name = "lib-udp-iosUITests";
+			productName = "lib-udp-iosUITests";
+			productReference = 00967E1C2B550547005D46ED /* lib-udp-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00967DF92B550545005D46ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					00967E002B550545005D46ED = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					00967E112B550547005D46ED = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 00967E002B550545005D46ED;
+					};
+					00967E1B2B550547005D46ED = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 00967E002B550545005D46ED;
+					};
+				};
+			};
+			buildConfigurationList = 00967DFC2B550545005D46ED /* Build configuration list for PBXProject "lib-udp-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00967DF82B550545005D46ED;
+			productRefGroup = 00967E022B550545005D46ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00967E002B550545005D46ED /* lib-udp-ios */,
+				00967E112B550547005D46ED /* lib-udp-iosTests */,
+				00967E1B2B550547005D46ED /* lib-udp-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00967DFF2B550545005D46ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00967E0D2B550547005D46ED /* Preview Assets.xcassets in Resources */,
+				00967E092B550547005D46ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00967E102B550547005D46ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00967E1A2B550547005D46ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00967DFD2B550545005D46ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00967E072B550545005D46ED /* ContentView.swift in Sources */,
+				00967E342B550BDE005D46ED /* lib-bridge.mm in Sources */,
+				00967E052B550545005D46ED /* lib_udp_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00967E0E2B550547005D46ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00967E172B550547005D46ED /* lib_udp_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00967E182B550547005D46ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00967E232B550547005D46ED /* lib_udp_iosUITestsLaunchTests.swift in Sources */,
+				00967E212B550547005D46ED /* lib_udp_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00967E142B550547005D46ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00967E002B550545005D46ED /* lib-udp-ios */;
+			targetProxy = 00967E132B550547005D46ED /* PBXContainerItemProxy */;
+		};
+		00967E1E2B550547005D46ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00967E002B550545005D46ED /* lib-udp-ios */;
+			targetProxy = 00967E1D2B550547005D46ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00967E242B550547005D46ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00967E252B550547005D46ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		00967E272B550547005D46ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "lib-udp-ios/lib_udp_ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lib-udp-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib-udp-ios",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.lib-udp-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "lib-udp-ios/lib-udp-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00967E282B550547005D46ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "lib-udp-ios/lib_udp_ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lib-udp-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib-udp-ios",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.lib-udp-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "lib-udp-ios/lib-udp-ios-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00967E2A2B550547005D46ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.lib-udp-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lib-udp-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lib-udp-ios";
+			};
+			name = Debug;
+		};
+		00967E2B2B550547005D46ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.lib-udp-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lib-udp-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lib-udp-ios";
+			};
+			name = Release;
+		};
+		00967E2D2B550547005D46ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.lib-udp-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lib-udp-ios";
+			};
+			name = Debug;
+		};
+		00967E2E2B550547005D46ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GAQ9MZ5LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.lib-udp-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lib-udp-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00967DFC2B550545005D46ED /* Build configuration list for PBXProject "lib-udp-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00967E242B550547005D46ED /* Debug */,
+				00967E252B550547005D46ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00967E262B550547005D46ED /* Build configuration list for PBXNativeTarget "lib-udp-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00967E272B550547005D46ED /* Debug */,
+				00967E282B550547005D46ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00967E292B550547005D46ED /* Build configuration list for PBXNativeTarget "lib-udp-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00967E2A2B550547005D46ED /* Debug */,
+				00967E2B2B550547005D46ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00967E2C2B550547005D46ED /* Build configuration list for PBXNativeTarget "lib-udp-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00967E2D2B550547005D46ED /* Debug */,
+				00967E2E2B550547005D46ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00967DF92B550545005D46ED /* Project object */;
+}
